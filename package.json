@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "start": "nodemon dist/index.js",
-    "comm": "git add * && git commit -m \"new script\" && git push -u origin main"
+    "deploy": "git add . && git commit -m \"new script\" && git push -u origin main"
   },
   "keywords": [],
   "author": "",
