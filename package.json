@@ -1,0 +1,16 @@
+{
+  "name": "typescript_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.1",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
