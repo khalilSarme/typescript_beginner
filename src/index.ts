@@ -33,10 +33,10 @@ const createTask = (text: string, period?: TaskDate): Task => {
 };
 
 c.log(
-  createTask('nothing', {
+  createTask('nothing to add', {
     production: '2/3/2024',
     expiration: '3/4/2022',
   }),
 );
-c.log(createTask('todo something', {production: '2/2/2025',expiration: '3/2/2022'}));
+c.log(createTask('todo something', {production: '2/2/2024',expiration: '3/2/2028'}));
 c.table(tasks)
