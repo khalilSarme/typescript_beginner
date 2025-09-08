@@ -6,20 +6,20 @@ interface TaskDate {
 }
 
 interface Task {
-  id: number;
-  text: string;
-  period: TaskDate;
+  id?: number;
+  text?: string;
+  period?: TaskDate;
 }
 
-let task: Partial<Task> = {};
+let task: Task = {};
 
 let nextId = 1;
 
-var car: Console = console;
+var c: Console = console;
 
-const tasks: Partial<Task>[] = [];
+const tasks: Task[] = [];
 
-const createTask = (text: string, period?: TaskDate): Partial<Task> => {
+const createTask = (text: string, period?: TaskDate): Task => {
   if (!text.length) {
     throw new EvalError();
   }
@@ -32,11 +32,11 @@ const createTask = (text: string, period?: TaskDate): Partial<Task> => {
   return task;
 };
 
-console.log(
+c.log(
   createTask('nothing', {
     production: '2/3/2024',
     expiration: '3/4/2022',
   }),
 );
-console.log(createTask('todo something'));
-car.log(55);
+c.log(createTask('todo something', {production: '2/2/2025',expiration: '3/2/2022'}));
+c.table(tasks)
