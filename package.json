@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "scripts": {
     "start": "nodemon dist/index.js",
-    "deploy": "bash ./git-auto.sh"
+    "deploy": "./git-auto.sh"
   },
   "keywords": [],
   "author": "",
