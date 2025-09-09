@@ -7,8 +7,8 @@ if [[ "$answer" == "y" || "$answer" == "Y" ]]; then
   git add . > /dev/null 2>&1
   git commit -m "new script" > /dev/null 2>&1
   git push -u origin main > /dev/null 2>&1
-  echo "Published Successfally 🎉"
+  echo -e "\e[32mPublished Successfully 🎉\e[0m"
 else
-  echo "Operation canceled 📍"
+  echo -e "\e[31mOperation canceled 📍\e[0m"
   git status
 fi
