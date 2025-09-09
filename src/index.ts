@@ -33,7 +33,7 @@ const createTask = (text: string, period?: TaskDate): Task => {
 };
 
 c.log(
-  createTask('nothing to add', {
+  createTask('Nothing to add', {
     pro: '2/3/2024',
     exp: '3/4/2022',
   }),
