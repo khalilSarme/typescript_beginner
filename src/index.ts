@@ -1,8 +1,8 @@
 /** @format */
 
 interface TaskDate {
-  production: string;
-  expiration: string;
+  pro: string;
+  exp: string;
 }
 
 interface Task {
@@ -34,9 +34,9 @@ const createTask = (text: string, period?: TaskDate): Task => {
 
 c.log(
   createTask('nothing to add', {
-    production: '2/3/2024',
-    expiration: '3/4/2022',
+    pro: '2/3/2024',
+    exp: '3/4/2022',
   }),
 );
-c.log(createTask('todo something', {production: '2/2/2024',expiration: '3/2/2028'}));
+c.log(createTask('todo something', {pro: '2/2/2024',exp: '3/2/2028'}));
 c.table(tasks)
